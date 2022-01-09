@@ -1,0 +1,8 @@
+when we go to http://localhost:3000/{any-page-having-ssr}
+it will make a request to next.js server, which will
+request graphql server at http://localhost:4000/graphql
+when reponse arrives, next.js server builds the HTML along with the response
+then send back to the clent (https://localhost:3000) {browser}
+
+
+for the first time, it'll load from server-side but when we go to any other page and then come back, it'll do csr. 
